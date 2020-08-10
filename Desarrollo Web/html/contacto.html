@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="utf-8">
+    <title> </title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> </head>
+</head>
+
+
+<body>
+    <header>
+        <div class="tituloPagina">WHITE QUEEN</div>
+        <div class="subtituloPagina">JEWELRY</div>
+    </header>
+    <nav>
+        <div class="contenedorNav">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li>PRODUCTOS
+                    <ul>
+                        <li><a href="relojes.html">RELOJES</a></li>
+                        <li><a href="joyas.html">JOYAS</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="wrapperPrincipal">
+        <div class="principal">
+            <div class="fotoPrincipal">
+                <img src="./img/principal.jpg" alt="foto de producto">
+            </div>
+            <h1>Contacto</h1>
+            <h3>Formulario de contacto</h3>
+
+            <div class="contacto">
+                <form>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="Su nombre" required><br>
+                    <label for="surname">Apellido</label>
+                    <input type="text" id="surname" placeholder="Su apellido" required><br>
+                    <label for="phone">Telefono</label>
+                    <input type="number" id="phone" placeholder="Telefono de contacto" required><br>
+                    <label for="producto">Producto</label>
+                    <select name="producto">
+                    <option value="reloj">Reloj</option>
+                    <option value="anillo">Anillo</option>
+                    <option value="pulsera">Pulsera</option>
+                    <option value="otro">Otro</option>
+                </select>
+                    <br>
+                    <label>Reparacion</label>
+                    <input type="radio" name="tarea" value="reparar" required>
+                    <label>Limpieza</label>
+                    <input type="radio" name="tarea" value="limpiar" required>
+                    <br>
+                    <br>
+                    <label>Comentarios</label><br>
+                    <textarea name="comentarios" cols="45" rows="5"></textarea>
+                    <br>
+                    <br>
+                    <label>Acepto recibir el llamado del personal</label><br><label>para coordinar el envio del producto.</label>
+                    <input type="checkbox" name="acepta" value="1" required/>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar formulario" />
+                    <input type="reset" value="Limpiar formulario" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapperFooter">
+
+        <footer>
+            <h5>Martin Lubo 2020 - Derechos reservados :)</h5>
+        </footer>
+    </div>
+</body>
+
+</html>
