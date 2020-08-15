@@ -1,4 +1,4 @@
-    body {
+body {
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -20,7 +20,6 @@ header {
 
 .logoHeader {
     display: flex;
-    border: solid 1px red;
     margin-left: 10px;
     width: 50px;
     height: 50px;
@@ -124,6 +123,10 @@ ul li:hover>ul {
     display: block;
 }
 
+.aire {
+    height: 150px;
+}
+
 .coleccionDestacada {
     grid-area: coleccionDestacada;
 }
@@ -140,7 +143,11 @@ ul li:hover>ul {
 }
 
 .botonContenido {
-    border: black solid 2px;
+    display: flex;
+    width: 150px;
+    padding: 15px;
+    border: black solid 1px;
+    justify-content: center;
 }
 
 .coleccionDestacada img {
@@ -151,27 +158,36 @@ ul li:hover>ul {
 }
 
 .generos {
-    /* border: solid 2px red; */
+    grid-area: generos;
     display: flex;
     flex-direction: column;
     padding: 5px;
-    grid-area: generos;
 }
 
 .generos img {
     object-fit: cover;
     width: 100%;
     height: auto;
+    margin-bottom: 10px;
     max-height: 150px;
 }
 
+.productoDestacadoWrapper {
+    display: grid;
+    grid-row-gap: 1px;
+}
+
 .productosDestacados {
-    /* border: solid 2px red; */
     grid-area: productosDestacados;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    margin: 30px;
+    overflow: auto;
+    align-content: center;
 }
 
 footer {
-    /* border: solid 2px red; */
     grid-area: footer;
 }
 
@@ -201,3 +217,4 @@ footer {
     nav {
         display: flex;
     }
+}
