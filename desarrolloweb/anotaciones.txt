@@ -1,0 +1,11 @@
+Fuentes:
+
+Titulos <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+Menus <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+/*  
+background-color: #B5B7AE; header
+background-color: #7Bc7c5; nav
+
+*/

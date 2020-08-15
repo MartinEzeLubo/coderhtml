@@ -1,4 +1,0 @@
-Fuentes:
-
-Titulos <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
-Menus <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
