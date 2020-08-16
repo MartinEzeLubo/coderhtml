@@ -173,18 +173,17 @@ ul li:hover>ul {
 }
 
 .productoDestacadoWrapper {
+    grid-area: productosDestacados;
     display: grid;
     grid-row-gap: 1px;
 }
 
 .productosDestacados {
-    grid-area: productosDestacados;
     display: grid;
     grid-auto-flow: column;
     grid-gap: 10px;
     margin: 30px;
     overflow: auto;
-    scrollbar-width: 0px;
 }
 
 .productosDestacados img {
@@ -194,9 +193,16 @@ ul li:hover>ul {
 
 .productosDestacados>* {
     padding: 30px;
-    color: #fff;
-    font-size: 20px;
+    color: #000000;
+    font-size: 0px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.prdDestTitulo {
+    font-size: 0px;
+}
+
+.prdDestDesc {}
 
 .colecciones {
     display: grid;
@@ -207,19 +213,24 @@ ul li:hover>ul {
 }
 
 .colecciones div {
+    border: solid 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     margin: 20px;
-    background-color: #7Bc7c5;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.colecciones div img {
+    height: 100%;
+    width: 100%;
 }
 
 .colecciones div div {
-    justify-content: ;
     height: 200px;
     margin: 20px;
-    background-color: #7Bc7c5;
 }
 
 footer {
@@ -285,5 +296,12 @@ footer img {
     }
     .redes {
         grid-column: 1/4;
+    }
+    .prdDestTitulo {
+        font-size: 22px;
+    }
+    .prdDestDesc {
+        margin-top: 5px;
+        font-size: 15px;
     }
 }
