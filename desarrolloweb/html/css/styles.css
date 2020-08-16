@@ -129,6 +129,7 @@ ul li:hover>ul {
 
 .coleccionDestacada {
     grid-area: coleccionDestacada;
+    display: grid;
 }
 
 .descColeccion {
@@ -343,19 +344,6 @@ footer img {
     .productosDeLaSeccion div div {
         padding: 0px;
     }
-    .coleccionDestacada {
-        position: relative;
-    }
-    .coleccionEspecial {
-        position: absolute;
-        top: 50%;
-        max-width: 50%;
-        left: 20px;
-        color: #000000;
-    }
-    .primerAire {
-        height: 50px;
-    }
 }
 
 @media (min-width: 1000px) {
@@ -416,15 +404,6 @@ footer img {
     .productosDeLaSeccion div div {
         padding: 0px;
     }
-    .coleccionDestacada {
-        position: relative;
-    }
-    .coleccionEspecial {
-        position: absolute;
-        top: 50%;
-        left: 20px;
-        color: #000000;
-    }
     .primerAire {
         height: 50px;
     }
@@ -441,5 +420,11 @@ footer img {
         margin: 20px;
         background-color: #FFFFFF;
         overflow: hidden;
+    }
+    .coleccionEspecial {
+        position: absolute;
+        left: 20px;
+        align-self: flex-end;
+        padding-bottom: 80px;
     }
 }
