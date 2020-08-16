@@ -207,6 +207,16 @@ ul li:hover>ul {
 }
 
 .colecciones div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin: 20px;
+    background-color: #7Bc7c5;
+}
+
+.colecciones div div {
+    justify-content: ;
     height: 200px;
     margin: 20px;
     background-color: #7Bc7c5;
