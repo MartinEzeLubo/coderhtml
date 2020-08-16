@@ -202,7 +202,28 @@ ul li:hover>ul {
     font-size: 0px;
 }
 
-.prdDestDesc {}
+.prdDestDesc {
+    font-size: 0px;
+}
+
+.productosDeLaSeccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productosDeLaSeccion div {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+.productosDeLaSeccion div div {
+    margin-bottom: 0px;
+}
+
+.productosDeLaSeccion img {
+    width: 100%;
+}
 
 .colecciones {
     display: grid;
@@ -264,7 +285,7 @@ footer img {
     height: 35px;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 999px) {
     .bodyWrapper {
         display: grid;
         grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
@@ -294,6 +315,13 @@ footer img {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    .generos img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        max-height: 250px;
+    }
     .redes {
         grid-column: 1/4;
     }
@@ -303,5 +331,115 @@ footer img {
     .prdDestDesc {
         margin-top: 5px;
         font-size: 15px;
+    }
+    .productosDeLaSeccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productosDeLaSeccion div {
+        padding: 20px;
+    }
+    .productosDeLaSeccion div div {
+        padding: 0px;
+    }
+    .coleccionDestacada {
+        position: relative;
+    }
+    .coleccionEspecial {
+        position: absolute;
+        top: 50%;
+        max-width: 50%;
+        left: 20px;
+        color: #000000;
+    }
+    .primerAire {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .bodyWrapper {
+        display: grid;
+        grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
+        grid-row-gap: 1px;
+    }
+    header {
+        flex-direction: column;
+        justify-items: center;
+    }
+    .logoHeader {
+        display: none;
+    }
+    .tituloHeader {
+        display: flex;
+        font-family: 'Italiana', serif;
+        font-size: 60px;
+        color: #ffffff;
+        justify-content: center;
+    }
+    .subtituloHeader {
+        display: flex;
+    }
+    nav {
+        display: flex;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .generos img {
+        object-fit: cover;
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+        max-height: 250px;
+    }
+    .redes {
+        grid-column: 1/4;
+    }
+    .prdDestTitulo {
+        font-size: 22px;
+    }
+    .prdDestDesc {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .productosDeLaSeccion {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .productosDeLaSeccion div {
+        padding: 20px;
+    }
+    .productosDeLaSeccion div div {
+        padding: 0px;
+    }
+    .coleccionDestacada {
+        position: relative;
+    }
+    .coleccionEspecial {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #000000;
+    }
+    .primerAire {
+        height: 50px;
+    }
+    .colecciones {
+        display: flex;
+        padding: 10px;
+    }
+    .colecciones div {
+        border: solid 1px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin: 20px;
+        background-color: #FFFFFF;
+        overflow: hidden;
     }
 }
