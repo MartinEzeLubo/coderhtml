@@ -184,11 +184,63 @@ ul li:hover>ul {
     grid-gap: 10px;
     margin: 30px;
     overflow: auto;
-    align-content: center;
+    scrollbar-width: 0px;
+}
+
+.productosDestacados img {
+    width: 200px;
+    height: 200px;
+}
+
+.productosDestacados>* {
+    padding: 30px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.colecciones {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) minmax(200px, 300px);
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.colecciones div {
+    height: 200px;
+    margin: 20px;
+    background-color: #7Bc7c5;
 }
 
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+footer div {
+    color: #ffffff;
+    padding: 10px 20px 10px 20px;
+}
+
+footer img {
+    height: 75px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px 0px 40px 0px;
+}
+
+.redes img {
+    margin: 0px 20px 0px 20px;
+    width: 35px;
+    height: 35px;
 }
 
 @media (min-width: 700px) {
@@ -216,5 +268,12 @@ footer {
     }
     nav {
         display: flex;
+    }
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .redes {
+        grid-column: 1/4;
     }
 }
