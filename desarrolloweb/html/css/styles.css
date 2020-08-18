@@ -286,6 +286,38 @@ footer img {
     height: 35px;
 }
 
+.efectoCompra {
+    position: relative;
+    transition-duration: 2s;
+}
+
+.efectoCompra img:hover {
+    opacity: 40%;
+}
+
+.efectoCompra img:hover~.textoComprar {
+    opacity: 100%;
+}
+
+.textoComprar {
+    color: #FFFFFF;
+    background-color: #B5B7AE;
+    opacity: 0%;
+    font-size: 30px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    transition-duration: 1000ms;
+}
+
+.efectoColecciones {
+    position: relative;
+}
+
+.efectoColecciones a:hover~.textoComprar {
+    opacity: 100%;
+}
+
 @media (min-width: 700px) and (max-width: 999px) {
     .bodyWrapper {
         display: grid;
