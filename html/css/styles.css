@@ -301,19 +301,23 @@ nav {
 }
 
 footer {
-    grid-area: footer;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-around;
     background-color: #000000;
-}
-
-footer div {
-    color: #ffffff;
     padding: 10px 20px 10px 20px;
 }
 
-footer img {
-    height: 75px;
+footer div {
+    justify-content: space-around;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.redes {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.redes img {
+    height: 35px;
+    padding: 0px 10px 0px 10px;
 }
