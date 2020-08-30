@@ -5,183 +5,103 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320, initial-scale=1">
     <title> </title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
-<body class="container">
-    <header class="d-none d-lg-flex">
-        <div class="tituloHeader">
-            <div><a href="index.html">WHITE QUEEN</a></div>
-        </div>
-        <div class="subtituloHeader">JEWELRY</div>
-    </header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light customNavbar">
-        <a class="navbar-brand d-lg-none" href="index.html">
-            <img src="./img/header/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> WHITE QUEEN
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
+<body>
+    <div class="bodyWrapper">
+        <header>
+            <div class="logoHeader">
+                <a href="index.html">
+                    <img src="./img/header/logo.png" alt="Logo White Quenn">
+                </a>
+            </div>
+            <div class="tituloHeader">
+                <div><a href="index.html">WHITE QUEEN</a></div>
+            </div>
+            <div class="subtituloHeader">JEWELRY</div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li>CATEGORIAS
+                    <ul>
+                        <li><a href="pendientes.html">PENDIENTES</a></li>
+                        <li><a href="collares.html">COLLARES</a></li>
+                        <li><a href="brazaletes.html">BRAZALETES</a></li>
+                        <li><a href="anillos.html">ANILLOS</a></li>
+                    </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        CATEGORIAS
-                      </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="pendientes.html">PENDIENTES</a>
-                        <a class="dropdown-item" href="collares.html">COLLARES</a>
-                        <a class="dropdown-item" href="brazaletes.html">BRAZALETES</a>
-                        <a class="dropdown-item" href="anillos.html">ANILLOS</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mujeres.html">MUJERES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hombres.html">HOMBRES</a>
-                </li>
+                <li><a href="mujeres.html">MUJERES</a></li>
+                <li><a href="hombres.html">HOMBRES</a></li>
             </ul>
-        </div>
-    </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/coleccionDestacada3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-left" style="justify-self: left;">
-                    <h2>First slide label</h2>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </nav>
+        <div class="contenidoPrincipal">
+            <div class="coleccionDestacada">
+                <img src="./img/coleccionDestacada3.jpg" alt="coleccion destacada">
+                <div class="descColeccion coleccionEspecial">
+                    <div class="tituloContenido"> COLECCION ESPECIAL 2020</div>
+                    <p>Un año para redescubrir la simpleza de la vida</p>
+                    <div class="botonContenido">Visitar Coleccion</div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/coleccionDestacada2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-left" s>
-                    <h2>Second slide label</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="productosDeLaSeccion">
+                <div>
+                    <img src="./img/productos/collares/collar01.jpg">
+                    <div class="prdDestTitulo">Collar 01</div>
+                    <div class="prdDestDesc">Descripcion collar 01</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar02.jpg">
+                    <div class="prdDestTitulo">Collar 02</div>
+                    <div class="prdDestDesc">Descripcion collar 02</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar03.jpg">
+                    <div class="prdDestTitulo">Collar 03</div>
+                    <div class="prdDestDesc">Descripcion collar 03</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar04.jpg">
+                    <div class="prdDestTitulo">Collar 04</div>
+                    <div class="prdDestDesc">Descripcion collar 04</div>iv>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar05.jpg">
+                    <div class="prdDestTitulo">Collar 05</div>
+                    <div class="prdDestDesc">Descripcion collar 05</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar06.jpg">
+                    <div class="prdDestTitulo">Collar 06</div>
+                    <div class="prdDestDesc">Descripcion collar 06</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar07.jpg">
+                    <div class="prdDestTitulo">Collar 07</div>
+                    <div class="prdDestDesc">Descripcion collar 07</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar08.jpg">
+                    <div class="prdDestTitulo">Collar 08</div>
+                    <div class="prdDestDesc">Descripcion collar 08</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar09.jpg">
+                    <div class="prdDestTitulo">Collar 09</div>
+                    <div class="prdDestDesc">Descripcion collar 09</div>
+                </div>
+                <div>
+                    <img src="./img/productos/collares/collar10.jpg">
+                    <div class="prdDestTitulo">Collar 10</div>
+                    <div class="prdDestDesc">Descripcion collar 10</div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./img/coleccionDestacada4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block text-left">
-                    <h2>Third slide label</h2>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 
-    <div class="d-flex justify-content-around flex-wrap mt-5 mb-5">
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar01.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 01</h5>
-                <p class="card-text">Descripcion collar 01.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar02.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 02</h5>
-                <p class="card-text">Descripcion collar 02.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar03.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 03</h5>
-                <p class="card-text">Descripcion collar 03.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar04.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 04</h5>
-                <p class="card-text">Descripcion collar 04.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar05.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 05</h5>
-                <p class="card-text">Descripcion collar 05.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar06.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 06</h5>
-                <p class="card-text">Descripcion collar 06.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar07.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 07</h5>
-                <p class="card-text">Descripcion collar 07.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar08.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 08</h5>
-                <p class="card-text">Descripcion collar 08.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar09.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 09</h5>
-                <p class="card-text">Descripcion collar 09.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-        <div class="card mb-2" style="width: 18rem;">
-            <img class="card-img-top" src="./img/productos/collares/collar10.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Collar 10</h5>
-                <p class="card-text">Descripcion collar 10.</p>
-                <a href="#" class="btn btn-primary">Ver</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- <div class="aire"></div>
+            <div class="aire"></div>
             <div class="descColeccion">
                 <div class="tituloContenido"> PRODUCTOS POR CATEGORIA</div>
             </div>
@@ -211,51 +131,37 @@
                     </a>
                     <div class="itemColeccionesTexto">ANILLOS</div>
                 </div>
-            </div> -->
-
-
-
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div>Pablo Giorello - Santos Lugares</div>
-                    <div>Buenos Aires - Argentina</div>
-                    <div>011 5555 1111</div>
-                </div>
-                <div class="col-lg-4">
-                    <div>Creado por: MELDEV</div>
-                    <div>www.meldev.com.ar</div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="col">
-                        <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="Data Fiscal" style="height: 75px;">
-                    </div>
-                </div>
             </div>
-            <div class="row">
-                <div class="redes">
-                    <div>
-                        <img src="./img/footer/redes/instagram.svg" alt="link a instagram">
-                    </div>
-                    <div>
-                        <img src="./img/footer/redes/facebook.svg" alt="link a facebook">
-                    </div>
-                    <div>
-                        <img src="./img/footer/redes/twitter.svg" alt="link a twitter">
-                    </div>
-                    <div>
-                        <img src="./img/footer/redes/pinterest.svg" alt="link a pinterest">
-                    </div>
-                    <div>
-                        <img src="./img/footer/redes/youtube.svg" alt="link a youtube">
-                    </div>
-                </div>
 
-            </div>
+
+
+
         </div>
-    </footer>
+        <footer>
+            <div>
+                <div>Pablo Giorello - Santos Lugares</div>
+                <div>Buenos Aires - Argentina</div>
+                <div>011 5555 1111</div>
+
+            </div>
+            <div>
+                <div>Creado por: MELDEV</div>
+                <div>www.meldev.com.ar</div>
+            </div>
+            <div>
+                <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="Data Fiscal">
+            </div>
+            <div class="redes">
+
+                <img src="./img/footer/redes/instagram.svg" alt="link a instagram">
+                <img src="./img/footer/redes/facebook.svg" alt="link a facebook">
+                <img src="./img/footer/redes/twitter.svg" alt="link a twitter">
+                <img src="./img/footer/redes/pinterest.svg" alt="link a pinterest">
+                <img src="./img/footer/redes/youtube.svg" alt="link a youtube">
+
+            </div>
+        </footer>
+    </div>
 
 
 
