@@ -5,6 +5,7 @@ header {
     background-color: #B5B7AE;
     align-items: center;
 }
+
 .logoHeader {
     display: flex;
     margin-left: 10px;
@@ -15,19 +16,18 @@ header {
         height: 100%;
     }
 }
+
 .tituloHeader {
     width: 100%;
     display: flex;
-    font-family: 'Italiana', serif;
-    font-size: 30px;
+    @include font(30px, 'italiana', 'serif');
     color: #ffffff;
     justify-content: center;
 }
+
 .subtituloHeader {
     display: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 25px;
+    @include font(25px, 'Montserrat', 'sans-serif', 100);
     color: #ffffff;
     padding-bottom: 7px;
     justify-content: center;

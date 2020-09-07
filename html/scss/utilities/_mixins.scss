@@ -1,0 +1,12 @@
+@mixin font($size, $family, $generic: "", $weight:400) {
+    font-size: $size;
+    font-family: $family;
+    font-weight: $weight;
+    @if $generic !="" {
+        family: "#{$family}",
+        #{$generic};
+    }
+    @else {
+        family: "#{$family}";
+    }
+}

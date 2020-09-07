@@ -5,7 +5,9 @@ body {
 }
 
 .bodyWrapper {
+    max-width: 1140px;
     display: grid;
+    margin: 0 auto;
     grid-template-areas: "header" "coleccionDestacada" "generos" "productosDestacados" "categorias" "footer";
     grid-row-gap: 1px;
 }
@@ -20,6 +22,12 @@ body {
 .coleccionDestacada {
     grid-area: coleccionDestacada;
     display: grid;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+    }
 }
 
 .descColeccion {
@@ -27,10 +35,7 @@ body {
 }
 
 .tituloContenido {
-    font-family: 'Montserrat', sans-serif;
-    font-variant: 400;
-    font-size: 30px;
-    color: #B5B7AE;
+    @include font(30px, 'Montserrat', 400)
 }
 
 .botonContenido {
@@ -41,26 +46,18 @@ body {
     justify-content: center;
 }
 
-.coleccionDestacada img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-}
-
 .generos {
     grid-area: generos;
     display: flex;
     flex-direction: column;
     padding: 5px;
-}
-
-.generos img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    max-height: 150px;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        max-height: 150px;
+    }
 }
 
 .productoDestacadoWrapper {
@@ -85,8 +82,7 @@ body {
 .productosDestacados>* {
     padding: 30px;
     color: #000000;
-    font-size: 0px;
-    font-family: 'Montserrat', sans-serif;
+    @include font(0px, 'Montserrat', 'sans-serif');
 }
 
 .prdDestTitulo {
@@ -101,19 +97,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.productosDeLaSeccion div {
-    max-width: 300px;
-    margin-bottom: 10px;
-}
-
-.productosDeLaSeccion div div {
-    margin-bottom: 0px;
-}
-
-.productosDeLaSeccion img {
-    width: 100%;
+    div {
+        max-width: 300px;
+        margin-bottom: 10px;
+        div {
+            margin-bottom: 0px;
+        }
+    }
+    img {
+        width: 100%;
+    }
 }
 
 
@@ -135,33 +128,17 @@ body {
     position: relative;
     justify-self: center;
     margin: 15px;
-}
-
-.itemColecciones a {
-    position: relative;
-    /*border: solid 1px black;*/
-    overflow: hidden;
-    transition-duration: 1000ms;
-}
-
-.itemColecciones img {
-    transition-duration: 1000ms;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.itemColeccionesTexto {
-    font-family: 'Montserrat', sans-serif;
-    font-variant: 400;
-    font-size: 20px;
-    opacity: 0%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition-duration: 1000ms;
-    background-color: #7Bc7c5;
-    padding: 10px;
+    a {
+        position: relative;
+        /*border: solid 1px black;*/
+        overflow: hidden;
+        transition-duration: 1000ms;
+    }
+    img {
+        transition-duration: 1000ms;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }
 
 .itemColecciones:hover img {
@@ -177,6 +154,18 @@ body {
     border: solid #7Bc7c5 5px;
 }
 
+.itemColeccionesTexto {
+    @include font(20px, 'Montserrat', 'sans-serif', 400);
+    opacity: 0%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 1000ms;
+    background-color: #7Bc7c5;
+    padding: 10px;
+}
+
 
 /*****/
 
@@ -187,15 +176,13 @@ footer {
     grid-template-rows: 1fr 1fr;
     justify-content: space-around;
     background-color: #000000;
-}
-
-footer div {
-    color: #ffffff;
-    padding: 10px 20px 10px 20px;
-}
-
-footer img {
-    height: 75px;
+    div {
+        color: #ffffff;
+        padding: 10px 20px 10px 20px;
+    }
+    img {
+        height: 75px;
+    }
 }
 
 .redes {
@@ -203,32 +190,29 @@ footer img {
     flex-direction: row;
     justify-content: center;
     padding: 40px 0px 40px 0px;
-}
-
-.redes img {
-    margin: 0px 20px 0px 20px;
-    width: 35px;
-    height: 35px;
+    img {
+        margin: 0px 20px 0px 20px;
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .efectoCompra {
     position: relative;
     transition-duration: 2s;
-}
-
-.efectoCompra img:hover {
-    opacity: 40%;
-}
-
-.efectoCompra img:hover~.textoComprar {
-    opacity: 100%;
+    img:hover {
+        opacity: 40%;
+    }
+    img:hover~.textoComprar {
+        opacity: 100%;
+    }
 }
 
 .textoComprar {
+    @include font(20px, 'Montserrat', 'sans-serif', 400);
     color: #FFFFFF;
     background-color: #7Bc7c5;
     opacity: 0%;
-    font-size: 30px;
     position: absolute;
     top: 70px;
     left: 50px;

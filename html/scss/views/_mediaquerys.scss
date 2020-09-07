@@ -12,9 +12,8 @@
         display: none;
     }
     .tituloHeader {
+        @include font(60px, 'Italiana', 'serif');
         display: flex;
-        font-family: 'Italiana', serif;
-        font-size: 60px;
         color: #ffffff;
         justify-content: center;
     }
@@ -72,9 +71,8 @@
         display: none;
     }
     .tituloHeader {
+        @include font(60px, 'Italiana', 'serif');
         display: flex;
-        font-family: 'Italiana', serif;
-        font-size: 60px;
         color: #ffffff;
         justify-content: center;
     }

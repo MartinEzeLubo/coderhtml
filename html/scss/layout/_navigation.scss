@@ -47,22 +47,21 @@ a {
     }
 }
 
-ul ul {
-    position: absolute;
-    top: 30px;
-    background-color: $colorPrincipal;
-    display: none;
-}
-
-ul ul li {
-    padding: 5px;
-    width: 100%;
-}
-
-ul li:hover {
-    color: $colorHover;
-}
-
-ul li:hover>ul {
-    display: block;
+ul {
+    ul {
+        position: absolute;
+        top: 30px;
+        background-color: $colorPrincipal;
+        display: none;
+        li {
+            padding: 5px;
+            width: 100%;
+        }
+    }
+    li:hover {
+        color: $colorHover;
+    }
+    li:hover>ul {
+        display: block;
+    }
 }

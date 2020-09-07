@@ -4,7 +4,9 @@ body {
   padding: 0px; }
 
 .bodyWrapper {
+  max-width: 1140px;
   display: grid;
+  margin: 0 auto;
   grid-template-areas: "header" "coleccionDestacada" "generos" "productosDestacados" "categorias" "footer";
   grid-row-gap: 1px; }
 
@@ -15,15 +17,20 @@ body {
 .coleccionDestacada {
   grid-area: coleccionDestacada;
   display: grid; }
+  .coleccionDestacada img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 500px; }
 
 .descColeccion {
   padding: 20px 20px 20px 20px; }
 
 .tituloContenido {
-  font-family: 'Montserrat', sans-serif;
-  font-variant: 400;
   font-size: 30px;
-  color: #B5B7AE; }
+  font-family: "Montserrat";
+  font-weight: 400;
+  family: "Montserrat", 400; }
 
 .botonContenido {
   display: flex;
@@ -32,24 +39,17 @@ body {
   border: black solid 1px;
   justify-content: center; }
 
-.coleccionDestacada img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  max-height: 500px; }
-
 .generos {
   grid-area: generos;
   display: flex;
   flex-direction: column;
   padding: 5px; }
-
-.generos img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  max-height: 150px; }
+  .generos img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-height: 150px; }
 
 .productoDestacadoWrapper {
   grid-area: productosDestacados;
@@ -71,7 +71,9 @@ body {
   padding: 30px;
   color: #000000;
   font-size: 0px;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat";
+  font-weight: 400;
+  family: "Montserrat", sans-serif; }
 
 .prdDestTitulo {
   font-size: 0px; }
@@ -83,16 +85,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.productosDeLaSeccion div {
-  max-width: 300px;
-  margin-bottom: 10px; }
-
-.productosDeLaSeccion div div {
-  margin-bottom: 0px; }
-
-.productosDeLaSeccion img {
-  width: 100%; }
+  .productosDeLaSeccion div {
+    max-width: 300px;
+    margin-bottom: 10px; }
+    .productosDeLaSeccion div div {
+      margin-bottom: 0px; }
+  .productosDeLaSeccion img {
+    width: 100%; }
 
 /*****/
 .colecciones {
@@ -110,30 +109,15 @@ body {
   position: relative;
   justify-self: center;
   margin: 15px; }
-
-.itemColecciones a {
-  position: relative;
-  /*border: solid 1px black;*/
-  overflow: hidden;
-  transition-duration: 1000ms; }
-
-.itemColecciones img {
-  transition-duration: 1000ms;
-  max-width: 100%;
-  max-height: 100%; }
-
-.itemColeccionesTexto {
-  font-family: 'Montserrat', sans-serif;
-  font-variant: 400;
-  font-size: 20px;
-  opacity: 0%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  transition-duration: 1000ms;
-  background-color: #7Bc7c5;
-  padding: 10px; }
+  .itemColecciones a {
+    position: relative;
+    /*border: solid 1px black;*/
+    overflow: hidden;
+    transition-duration: 1000ms; }
+  .itemColecciones img {
+    transition-duration: 1000ms;
+    max-width: 100%;
+    max-height: 100%; }
 
 .itemColecciones:hover img {
   opacity: 50%;
@@ -145,6 +129,20 @@ body {
 .itemColecciones:hover a {
   border: solid #7Bc7c5 5px; }
 
+.itemColeccionesTexto {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  family: "Montserrat", sans-serif;
+  opacity: 0%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 1000ms;
+  background-color: #7Bc7c5;
+  padding: 10px; }
+
 /*****/
 footer {
   grid-area: footer;
@@ -153,40 +151,38 @@ footer {
   grid-template-rows: 1fr 1fr;
   justify-content: space-around;
   background-color: #000000; }
-
-footer div {
-  color: #ffffff;
-  padding: 10px 20px 10px 20px; }
-
-footer img {
-  height: 75px; }
+  footer div {
+    color: #ffffff;
+    padding: 10px 20px 10px 20px; }
+  footer img {
+    height: 75px; }
 
 .redes {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding: 40px 0px 40px 0px; }
-
-.redes img {
-  margin: 0px 20px 0px 20px;
-  width: 35px;
-  height: 35px; }
+  .redes img {
+    margin: 0px 20px 0px 20px;
+    width: 35px;
+    height: 35px; }
 
 .efectoCompra {
   position: relative;
   transition-duration: 2s; }
-
-.efectoCompra img:hover {
-  opacity: 40%; }
-
-.efectoCompra img:hover ~ .textoComprar {
-  opacity: 100%; }
+  .efectoCompra img:hover {
+    opacity: 40%; }
+  .efectoCompra img:hover ~ .textoComprar {
+    opacity: 100%; }
 
 .textoComprar {
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  family: "Montserrat", sans-serif;
   color: #FFFFFF;
   background-color: #7Bc7c5;
   opacity: 0%;
-  font-size: 30px;
   position: absolute;
   top: 70px;
   left: 50px;
@@ -238,10 +234,9 @@ ul ul {
   top: 30px;
   background-color: #7Bc7c5;
   display: none; }
-
-ul ul li {
-  padding: 5px;
-  width: 100%; }
+  ul ul li {
+    padding: 5px;
+    width: 100%; }
 
 ul li:hover {
   color: #26a3d9; }
@@ -268,16 +263,19 @@ header {
 .tituloHeader {
   width: 100%;
   display: flex;
-  font-family: 'Italiana', serif;
   font-size: 30px;
+  font-family: "italiana";
+  font-weight: 400;
+  family: "italiana", serif;
   color: #ffffff;
   justify-content: center; }
 
 .subtituloHeader {
   display: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 100;
   font-size: 25px;
+  font-family: "Montserrat";
+  font-weight: 100;
+  family: "Montserrat", sans-serif;
   color: #ffffff;
   padding-bottom: 7px;
   justify-content: center; }
@@ -293,9 +291,11 @@ header {
   .logoHeader {
     display: none; }
   .tituloHeader {
-    display: flex;
-    font-family: 'Italiana', serif;
     font-size: 60px;
+    font-family: "Italiana";
+    font-weight: 400;
+    family: "Italiana", serif;
+    display: flex;
     color: #ffffff;
     justify-content: center; }
   .subtituloHeader {
@@ -338,9 +338,11 @@ header {
   .logoHeader {
     display: none; }
   .tituloHeader {
-    display: flex;
-    font-family: 'Italiana', serif;
     font-size: 60px;
+    font-family: "Italiana";
+    font-weight: 400;
+    family: "Italiana", serif;
+    display: flex;
     color: #ffffff;
     justify-content: center; }
   .subtituloHeader {
