@@ -1,0 +1,41 @@
+.coleccionDestacada {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    img {
+        grid-row: 1;
+        grid-column: 1/13;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        grid-column: 1/7;
+        grid-row: 1;
+    }
+    margin-bottom: 40px;
+}
+
+.descColeccionDest {
+    border: green solid 3px;
+    padding: 10px 10px 10px 10px;
+    h1 {
+        font-size: 3vw;
+    }
+    p {
+        display: none;
+        @include media(lg) {
+            display: flex;
+        }
+    }
+}
+
+.botonContenidoDest {
+    width: 150px;
+    padding: 15px;
+    border: black solid 1px;
+    justify-content: center;
+}

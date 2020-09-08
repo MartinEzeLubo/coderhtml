@@ -1,31 +1,6 @@
 @media (min-width: 700px) and (max-width: 999px) {
-    .bodyWrapper {
-        display: grid;
-        grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
-        grid-row-gap: 1px;
-    }
-    header {
-        flex-direction: column;
-        justify-items: center;
-    }
-    .logoHeader {
-        display: none;
-    }
-    .tituloHeader {
-        @include font(60px, 'Italiana', 'serif');
-        display: flex;
-        color: #ffffff;
-        justify-content: center;
-    }
-    .subtituloHeader {
-        display: flex;
-    }
     nav {
         display: flex;
-    }
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
     .generos img {
         object-fit: cover;
@@ -33,9 +8,6 @@
         height: auto;
         margin-bottom: 10px;
         max-height: 250px;
-    }
-    .redes {
-        grid-column: 1/4;
     }
     .prdDestTitulo {
         font-size: 22px;
@@ -58,33 +30,8 @@
 }
 
 @media (min-width: 1000px) {
-    .bodyWrapper {
-        display: grid;
-        grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
-        grid-row-gap: 1px;
-    }
-    header {
-        flex-direction: column;
-        justify-items: center;
-    }
-    .logoHeader {
-        display: none;
-    }
-    .tituloHeader {
-        @include font(60px, 'Italiana', 'serif');
-        display: flex;
-        color: #ffffff;
-        justify-content: center;
-    }
-    .subtituloHeader {
-        display: flex;
-    }
     nav {
         display: flex;
-    }
-    footer {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
     }
     .generos img {
         object-fit: cover;
@@ -92,9 +39,6 @@
         height: auto;
         margin-bottom: 10px;
         max-height: 250px;
-    }
-    .redes {
-        grid-column: 1/4;
     }
     .prdDestTitulo {
         font-size: 22px;
@@ -116,18 +60,6 @@
     }
     .primerAire {
         height: 50px;
-    }
-    .coleccionEspecial {
-        position: absolute;
-        left: 20px;
-        align-self: flex-end;
-        padding-bottom: 80px;
-    }
-    .colecciones {
-        grid-area: categorias;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
     }
     .itemColecciones {
         justify-self: center;

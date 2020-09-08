@@ -4,50 +4,39 @@ body {
     padding: 0px;
 }
 
-.bodyWrapper {
+.bodyContent {
     max-width: 1140px;
     display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: solid 2px red;
     margin: 0 auto;
-    grid-template-areas: "header" "coleccionDestacada" "generos" "productosDestacados" "categorias" "footer";
-    grid-row-gap: 1px;
+}
+
+.coleccionDestacada {
+    grid-column: 1/13;
+}
+
+.productoDestacadoWrapper {
+    grid-column: 1/13;
+}
+
+.generos {
+    grid-column: 1/13;
+}
+
+.colecciones {
+    grid-column: 1/13;
 }
 
 
 /*****   OTROS     *******/
 
-.aire {
-    height: 150px;
-}
-
-.coleccionDestacada {
-    grid-area: coleccionDestacada;
-    display: grid;
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        max-height: 500px;
-    }
-}
-
-.descColeccion {
-    padding: 20px 20px 20px 20px;
-}
-
 .tituloContenido {
-    @include font(30px, 'Montserrat', 400)
-}
-
-.botonContenido {
-    display: flex;
-    width: 150px;
-    padding: 15px;
-    border: black solid 1px;
-    justify-content: center;
+    font-size: calc(1em + 1vw);
+    @include font('Montserrat', 'serif', 400)
 }
 
 .generos {
-    grid-area: generos;
     display: flex;
     flex-direction: column;
     padding: 5px;
@@ -61,7 +50,6 @@ body {
 }
 
 .productoDestacadoWrapper {
-    grid-area: productosDestacados;
     display: grid;
     grid-row-gap: 1px;
 }
@@ -82,7 +70,7 @@ body {
 .productosDestacados>* {
     padding: 30px;
     color: #000000;
-    @include font(0px, 'Montserrat', 'sans-serif');
+    @include font('Montserrat', 'sans-serif');
 }
 
 .prdDestTitulo {
@@ -112,13 +100,6 @@ body {
 
 /*****/
 
-.colecciones {
-    grid-area: categorias;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-}
-
 .itemColecciones {
     display: flex;
     flex-direction: column;
@@ -130,7 +111,6 @@ body {
     margin: 15px;
     a {
         position: relative;
-        /*border: solid 1px black;*/
         overflow: hidden;
         transition-duration: 1000ms;
     }
@@ -155,7 +135,7 @@ body {
 }
 
 .itemColeccionesTexto {
-    @include font(20px, 'Montserrat', 'sans-serif', 400);
+    @include font('Montserrat', 'sans-serif', 400);
     opacity: 0%;
     position: absolute;
     left: 50%;
@@ -170,7 +150,6 @@ body {
 /*****/
 
 footer {
-    grid-area: footer;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -209,7 +188,7 @@ footer {
 }
 
 .textoComprar {
-    @include font(20px, 'Montserrat', 'sans-serif', 400);
+    @include font('Montserrat', 'sans-serif', 400);
     color: #FFFFFF;
     background-color: #7Bc7c5;
     opacity: 0%;

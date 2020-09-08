@@ -1,12 +1,28 @@
-@mixin font($size, $family, $generic: "", $weight:400) {
-    font-size: $size;
-    font-family: $family;
+@mixin media($media) {
+    @if $media==sm {
+        @media (max-width: $breakpoint-sm) {
+            @content;
+        }
+    }
+    @else if $media==md {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+            @content;
+        }
+    }
+    @else if $media==lg {
+        @media (min-width: $breakpoint-md) {
+            @content;
+        }
+    }
+}
+
+@mixin font($family, $generic: "", $weight:400) {
     font-weight: $weight;
     @if $generic !="" {
-        family: "#{$family}",
+        font-family: "#{$family}",
         #{$generic};
     }
     @else {
-        family: "#{$family}";
+        font-family: "#{$family}";
     }
 }

@@ -1,46 +1,40 @@
+/*****************  COLORES  ***********************/
+/*****************  FUENTES  ***********************/
+/*****************  BREAKPOINTS  ***********************/
+/*****************  COLORES  ***********************/
+/*****************  COLORES  ***********************/
+/*****************  COLORES  ***********************/
 body {
   width: 100%;
   margin: 0px;
   padding: 0px; }
 
-.bodyWrapper {
+.bodyContent {
   max-width: 1140px;
   display: grid;
-  margin: 0 auto;
-  grid-template-areas: "header" "coleccionDestacada" "generos" "productosDestacados" "categorias" "footer";
-  grid-row-gap: 1px; }
-
-/*****   OTROS     *******/
-.aire {
-  height: 150px; }
+  grid-template-columns: repeat(12, 1fr);
+  border: solid 2px red;
+  margin: 0 auto; }
 
 .coleccionDestacada {
-  grid-area: coleccionDestacada;
-  display: grid; }
-  .coleccionDestacada img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    max-height: 500px; }
+  grid-column: 1/13; }
 
-.descColeccion {
-  padding: 20px 20px 20px 20px; }
-
-.tituloContenido {
-  font-size: 30px;
-  font-family: "Montserrat";
-  font-weight: 400;
-  family: "Montserrat", 400; }
-
-.botonContenido {
-  display: flex;
-  width: 150px;
-  padding: 15px;
-  border: black solid 1px;
-  justify-content: center; }
+.productoDestacadoWrapper {
+  grid-column: 1/13; }
 
 .generos {
-  grid-area: generos;
+  grid-column: 1/13; }
+
+.colecciones {
+  grid-column: 1/13; }
+
+/*****   OTROS     *******/
+.tituloContenido {
+  font-size: calc(1em + 1vw);
+  font-weight: 400;
+  font-family: "Montserrat", serif; }
+
+.generos {
   display: flex;
   flex-direction: column;
   padding: 5px; }
@@ -52,7 +46,6 @@ body {
     max-height: 150px; }
 
 .productoDestacadoWrapper {
-  grid-area: productosDestacados;
   display: grid;
   grid-row-gap: 1px; }
 
@@ -70,10 +63,8 @@ body {
 .productosDestacados > * {
   padding: 30px;
   color: #000000;
-  font-size: 0px;
-  font-family: "Montserrat";
   font-weight: 400;
-  family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .prdDestTitulo {
   font-size: 0px; }
@@ -94,12 +85,6 @@ body {
     width: 100%; }
 
 /*****/
-.colecciones {
-  grid-area: categorias;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr; }
-
 .itemColecciones {
   display: flex;
   flex-direction: column;
@@ -111,7 +96,6 @@ body {
   margin: 15px; }
   .itemColecciones a {
     position: relative;
-    /*border: solid 1px black;*/
     overflow: hidden;
     transition-duration: 1000ms; }
   .itemColecciones img {
@@ -130,10 +114,8 @@ body {
   border: solid #7Bc7c5 5px; }
 
 .itemColeccionesTexto {
-  font-size: 20px;
-  font-family: "Montserrat";
   font-weight: 400;
-  family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   opacity: 0%;
   position: absolute;
   left: 50%;
@@ -145,7 +127,6 @@ body {
 
 /*****/
 footer {
-  grid-area: footer;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -176,10 +157,8 @@ footer {
     opacity: 100%; }
 
 .textoComprar {
-  font-size: 20px;
-  font-family: "Montserrat";
   font-weight: 400;
-  family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #FFFFFF;
   background-color: #7Bc7c5;
   opacity: 0%;
@@ -245,11 +224,18 @@ ul li:hover > ul {
   display: block; }
 
 header {
-  grid-area: header;
   display: flex;
   flex-direction: row;
   background-color: #B5B7AE;
   align-items: center; }
+  @media (min-width: 360px) and (max-width: 700px) {
+    header {
+      flex-direction: row;
+      justify-items: center; } }
+  @media (min-width: 700px) {
+    header {
+      flex-direction: column;
+      justify-items: center; } }
 
 .logoHeader {
   display: flex;
@@ -259,60 +245,81 @@ header {
   .logoHeader img {
     width: 100%;
     height: 100%; }
+  @media (min-width: 700px) {
+    .logoHeader {
+      display: none; } }
 
 .tituloHeader {
   width: 100%;
   display: flex;
   font-size: 30px;
-  font-family: "italiana";
   font-weight: 400;
-  family: "italiana", serif;
+  font-family: "italiana", serif;
   color: #ffffff;
   justify-content: center; }
+  @media (min-width: 700px) {
+    .tituloHeader {
+      font-size: 60px; } }
 
 .subtituloHeader {
   display: none;
   font-size: 25px;
-  font-family: "Montserrat";
   font-weight: 100;
-  family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   padding-bottom: 7px;
   justify-content: center; }
+  @media (min-width: 360px) and (max-width: 700px) {
+    .subtituloHeader {
+      display: none; } }
+  @media (min-width: 700px) {
+    .subtituloHeader {
+      display: flex; } }
+
+.coleccionDestacada {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 40px; }
+  .coleccionDestacada img {
+    grid-row: 1;
+    grid-column: 1/13;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 300px; }
+  .coleccionDestacada div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    grid-column: 1/7;
+    grid-row: 1; }
+
+.descColeccionDest {
+  border: green solid 3px;
+  padding: 10px 10px 10px 10px; }
+  .descColeccionDest h1 {
+    font-size: 3vw; }
+  .descColeccionDest p {
+    display: none; }
+    @media (min-width: 700px) {
+      .descColeccionDest p {
+        display: flex; } }
+
+.botonContenidoDest {
+  width: 150px;
+  padding: 15px;
+  border: black solid 1px;
+  justify-content: center; }
 
 @media (min-width: 700px) and (max-width: 999px) {
-  .bodyWrapper {
-    display: grid;
-    grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
-    grid-row-gap: 1px; }
-  header {
-    flex-direction: column;
-    justify-items: center; }
-  .logoHeader {
-    display: none; }
-  .tituloHeader {
-    font-size: 60px;
-    font-family: "Italiana";
-    font-weight: 400;
-    family: "Italiana", serif;
-    display: flex;
-    color: #ffffff;
-    justify-content: center; }
-  .subtituloHeader {
-    display: flex; }
   nav {
     display: flex; }
-  footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
   .generos img {
     object-fit: cover;
     width: 100%;
     height: auto;
     margin-bottom: 10px;
     max-height: 250px; }
-  .redes {
-    grid-column: 1/4; }
   .prdDestTitulo {
     font-size: 22px; }
   .prdDestDesc {
@@ -328,38 +335,14 @@ header {
     padding: 0px; } }
 
 @media (min-width: 1000px) {
-  .bodyWrapper {
-    display: grid;
-    grid-template-areas: "header" "nav" "coleccionDestacada" "generos" "productosDestacados" "colecciones" "footer";
-    grid-row-gap: 1px; }
-  header {
-    flex-direction: column;
-    justify-items: center; }
-  .logoHeader {
-    display: none; }
-  .tituloHeader {
-    font-size: 60px;
-    font-family: "Italiana";
-    font-weight: 400;
-    family: "Italiana", serif;
-    display: flex;
-    color: #ffffff;
-    justify-content: center; }
-  .subtituloHeader {
-    display: flex; }
   nav {
     display: flex; }
-  footer {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
   .generos img {
     object-fit: cover;
     width: 40%;
     height: auto;
     margin-bottom: 10px;
     max-height: 250px; }
-  .redes {
-    grid-column: 1/4; }
   .prdDestTitulo {
     font-size: 22px; }
   .prdDestDesc {
@@ -375,16 +358,6 @@ header {
     padding: 0px; }
   .primerAire {
     height: 50px; }
-  .coleccionEspecial {
-    position: absolute;
-    left: 20px;
-    align-self: flex-end;
-    padding-bottom: 80px; }
-  .colecciones {
-    grid-area: categorias;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr; }
   .itemColecciones {
     justify-self: center;
     min-width: 200px;
