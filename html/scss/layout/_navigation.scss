@@ -1,10 +1,12 @@
 nav {
-    grid-area: nav;
     display: none;
     flex-direction: column;
     align-items: center;
     font-size: 0px;
     background-color: $colorPrincipal;
+    @include media(lg) {
+        display: flex;
+    }
     ul {
         list-style-type: none;
         display: flex;

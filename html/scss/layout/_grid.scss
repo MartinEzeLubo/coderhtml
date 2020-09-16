@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     width: 100%;
     margin: 0px;
@@ -8,7 +12,7 @@ body {
     max-width: 1140px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    border: solid 2px red;
+    /*border: solid 2px red;*/
     margin: 0 auto;
 }
 
@@ -21,7 +25,7 @@ body {
 }
 
 .generos {
-    grid-column: 1/13;
+    grid-column: 2/12;
 }
 
 .colecciones {
@@ -32,7 +36,6 @@ body {
 /*****   OTROS     *******/
 
 .tituloContenido {
-    font-size: calc(1em + 1vw);
     @include font('Montserrat', 'serif', 400)
 }
 
@@ -148,33 +151,6 @@ body {
 
 
 /*****/
-
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-around;
-    background-color: #000000;
-    div {
-        color: #ffffff;
-        padding: 10px 20px 10px 20px;
-    }
-    img {
-        height: 75px;
-    }
-}
-
-.redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 40px 0px 40px 0px;
-    img {
-        margin: 0px 20px 0px 20px;
-        width: 35px;
-        height: 35px;
-    }
-}
 
 .efectoCompra {
     position: relative;

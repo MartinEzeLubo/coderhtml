@@ -30,19 +30,22 @@ header {
 .tituloHeader {
     width: 100%;
     display: flex;
-    font-size: 30px;
-    @include font('italiana', 'serif');
+    font-size: 3rem;
+    @include font($fontWhiteQueen, 'sans-serif');
     color: #ffffff;
     justify-content: center;
     @include media(lg) {
-        font-size: 60px;
+        font-size: 6rem;
+    }
+    a:hover {
+        color: #FFFFFF;
     }
 }
 
 .subtituloHeader {
     display: none;
     font-size: 25px;
-    @include font('Montserrat', 'sans-serif', 100);
+    @include font($fontSecundaria, 'sans-serif', 100);
     color: #ffffff;
     padding-bottom: 7px;
     justify-content: center;
