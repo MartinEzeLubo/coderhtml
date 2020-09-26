@@ -3,14 +3,12 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 50px);
-    border: red solid 2px;
     @include media(lg) {
         grid-template-rows: repeat(10, 50px);
     }
     .coleccionDestacadaImg {
         grid-column: 1/13;
         grid-row: 1/8;
-        border: yellow solid 2px;
         width: 100%;
         overflow: hidden;
         img {
@@ -20,7 +18,6 @@
         }
     }
     div {
-        border: green solid 2px;
         grid-column: 3/11;
         grid-row: 7/9;
         .coleccionDestDesc {

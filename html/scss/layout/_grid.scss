@@ -10,21 +10,17 @@ body {
         max-width: 1140px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        border: solid 2px blue;
         margin: 0 auto;
         .coleccionDestacada {
             grid-column: 1/13;
         }
         .productoDestacadoWrapper {
-            border: solid red 2px;
             grid-column: 2/12;
         }
         .generos {
-            border: solid red 2px;
             grid-column: 2/12;
         }
         .colecciones {
-            border: solid red 2px;
             grid-column: 2/12;
         }
     }
