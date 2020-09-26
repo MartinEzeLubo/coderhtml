@@ -1,0 +1,34 @@
+.productosDestacados img {
+    width: 200px;
+    height: 200px;
+}
+
+.productosDestacados>* {
+    padding: 30px;
+    color: #000000;
+    @include font('Montserrat', 'sans-serif');
+}
+
+.prdDestTitulo {
+    font-size: 0px;
+}
+
+.prdDestDesc {
+    font-size: 0px;
+}
+
+.productosDeLaSeccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+        max-width: 300px;
+        margin-bottom: 10px;
+        div {
+            margin-bottom: 0px;
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

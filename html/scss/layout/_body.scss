@@ -1,0 +1,7 @@
+.productosDestacados {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    margin: 30px;
+    overflow: auto;
+}

@@ -6,30 +6,28 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
-}
-
-.bodyContent {
-    max-width: 1140px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /*border: solid 2px red;*/
-    margin: 0 auto;
-}
-
-.coleccionDestacada {
-    grid-column: 1/13;
-}
-
-.productoDestacadoWrapper {
-    grid-column: 1/13;
-}
-
-.generos {
-    grid-column: 2/12;
-}
-
-.colecciones {
-    grid-column: 1/13;
+    .bodyContent {
+        max-width: 1140px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        border: solid 2px blue;
+        margin: 0 auto;
+        .coleccionDestacada {
+            grid-column: 1/13;
+        }
+        .productoDestacadoWrapper {
+            border: solid red 2px;
+            grid-column: 2/12;
+        }
+        .generos {
+            border: solid red 2px;
+            grid-column: 2/12;
+        }
+        .colecciones {
+            border: solid red 2px;
+            grid-column: 2/12;
+        }
+    }
 }
 
 
@@ -37,67 +35,6 @@ body {
 
 .tituloContenido {
     @include font('Montserrat', 'serif', 400)
-}
-
-.generos {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-        max-height: 150px;
-    }
-}
-
-.productoDestacadoWrapper {
-    display: grid;
-    grid-row-gap: 1px;
-}
-
-.productosDestacados {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
-    margin: 30px;
-    overflow: auto;
-}
-
-.productosDestacados img {
-    width: 200px;
-    height: 200px;
-}
-
-.productosDestacados>* {
-    padding: 30px;
-    color: #000000;
-    @include font('Montserrat', 'sans-serif');
-}
-
-.prdDestTitulo {
-    font-size: 0px;
-}
-
-.prdDestDesc {
-    font-size: 0px;
-}
-
-.productosDeLaSeccion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    div {
-        max-width: 300px;
-        margin-bottom: 10px;
-        div {
-            margin-bottom: 0px;
-        }
-    }
-    img {
-        width: 100%;
-    }
 }
 
 
